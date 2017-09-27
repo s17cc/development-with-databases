@@ -21,15 +21,15 @@ services:
       - MYSQL_PASSWORD=test
     ports:
       - 3306:3306
-  migrations:
-    image: [your_db_migration_image]
-    environment:
-      - NODE_ENV=development
-    depends_on:
-      - mysql
-  fixtures:
-    image: [your_db_fixtures_image]
-    environment:
-      - NODE_ENV=development
-    depends_on:
-      - mysql
+#  migrations:
+#    image: [your_db_migration_image]
+#    environment:
+#      - NODE_ENV=development
+#    depends_on:
+#      - mysql
+#  fixtures:
+#    image: [your_db_fixtures_image]
+#    environment:
+#      - NODE_ENV=development
+#    depends_on:
+#      - mysql
