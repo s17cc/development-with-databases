@@ -2,7 +2,7 @@ FROM mhart/alpine-node:5.6.0
 
 EXPOSE 80
 WORKDIR /app
-ENV NODE_ENV production
+ENV NODE_ENV development
 
 # add package.json and run npm install before adding the rest of the files
 # this way, you only run npm install when package.json changes
